@@ -22,9 +22,14 @@ Users should be able to:
 
 ### Screenshot
 
+![image](https://user-images.githubusercontent.com/71193719/121113977-5908fa00-c7e9-11eb-9916-6844b508e3ce.png)
+
+![image](https://user-images.githubusercontent.com/71193719/121114014-632af880-c7e9-11eb-9c6b-9ba850d0af52.png)
+
+
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live Site URL](https://mariagabs.github.io/single-price-grid/)
 
 ## My process
 
