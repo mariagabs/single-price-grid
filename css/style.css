@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 47%, 52%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: var(--light-gray);
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  display: grid;
+  margin: 3.125rem;
+}
+
+.card {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 40.6rem;
+  grid-template-areas:
+    "info info"
+    "subscription about";
+  box-shadow: 0.5rem 0.8rem 2rem 0rem rgb(0 0 0 / 10%);
+  border-radius: 0.5rem;
+}
+
+.card-info {
+  grid-area: info;
+  background: white;
+  padding: 2.5rem 3.75rem 3.125rem 2.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-info h1 {
+  color: var(--cyan);
+  font-size: 1.8rem;
+  margin-bottom: 1.56rem;
+}
+
+.card-info h2 {
+  color: var(--bright-yellow);
+  font-size: 1.1rem;
+  margin-bottom: 0.9rem;
+}
+
+.card-info p {
+  color: var(--grayish-blue);
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.card-subscription {
+  grid-area: subscription;
+  background: var(--cyan);
+  padding: 2.5rem;
+  color: white;
+  border-radius: 0 0 0 0.5rem;
+}
+
+.card-subscription h2 {
+  font-size: 1.1rem;
+  padding-bottom: 1.25rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+
+.price span {
+  margin-left: 0.9rem;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.button {
+  text-align: center;
+  margin-top: 1.875rem;
+  background: var(--bright-yellow);
+  padding: 0.9rem;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  box-shadow: 0 0.375rem 0.9rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.card-about {
+  grid-area: about;
+  background: var(--light-cyan);
+  border-radius: 0 0 0.5rem 0;
+  color: white;
+  padding: 2.5rem;
+}
+
+.card-about h2 {
+  font-size: 1.1rem;
+  padding-bottom: 1.25rem;
+}
+
+.card-about ul li {
+  font-size: 0.9rem;
+  line-height: 1.35rem;
+  opacity: 0.8;
+}
+
+.attribution {
+  margin-top: 5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+.attribution a {
+  color: var(--cyan);
+}
+
+@media (max-width: 375px) {
+  .container {
+    margin: 1.56rem;
+  }
+
+  .card {
+    grid-template-columns: repeat(2, 100%);
+    grid-template-areas:
+      "info"
+      "subscription"
+      "about";
+  }
+
+  .card-info {
+    padding: 1.56rem;
+  }
+
+  .card-info h1 {
+    font-size: 1.3rem;
+  }
+
+  .card-info h2 {
+    font-size: 1rem;
+  }
+
+  .card-info p {
+    font-size: 0.9rem;
+  }
+
+  .card-subscription {
+    border-radius: 0;
+    padding: 1.56rem;
+  }
+
+  .card-about {
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1.56rem;
+  }
+}
