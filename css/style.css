@@ -129,7 +129,7 @@ body {
   color: var(--cyan);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .container {
     margin: 1.56rem;
   }
